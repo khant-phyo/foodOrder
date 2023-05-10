@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+
+       <!-- header Font -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Smythe&display=swap" rel="stylesheet">
+
+        <!-- emoji Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+        
+        <!-- Btn Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <div class="header" id="header">
+            <h1>Jimmy's Dinner</h1>
+            <h2>The best burger and pizza in town.</h2>
+        </div>
+        <div class="container" id="container"></div>
+
+        <div class="order-reciept hidden" id="order-reciept">
+            <p class="order-title">Your order</p>
+            <div class="order" id="order">
+                <div class="order-list" id="order-list"><!-- order js goes here--></div>
+            </div>
+            
+            <p class="devider"></p>
+            <div class="total" id="toatl">
+                <p class="total-word">Total price:</p>
+                <p class="total-price" id="total-price"></p>
+            </div>
+            <button class="order-btn" id="order-btn" data-completeOrder="order">Complete order</button>
+        </div>
+        <div class="payment hidden" id="payment">
+            <p class="payment-header">Enter card details</p>
+            <form class="payment-form" id="payment-form">
+				<input type="text" name="" placeholder="Enter your name" required>
+				<input type="number" name="" placeholder="Enter card number" required>
+                <input type="number" name="" placeholder="Enter CVV" required>
+                <button type="submit" class="pay-btn" data-payBtn="pay">Pay</button>
+			</form>	
+        </div>
+        <div class="order-finished hidden" id="order-finished">
+            <p>Thanks, James! Your order is on it's way.</p>            
+        </div>
+
+	<script src="index.js" type="module"></script>
+
+    </body>
+</html>
